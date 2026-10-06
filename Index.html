@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - CHALISTA ASTHER THEDRESIA</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="fixed w-full top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <a href="#home" class="text-xl font-bold text-brand-600 dark:text-brand-500">
+          Chalista<span class="text-gray-400">.</span>
+        </a>
+        
+        <div class="hidden md:flex space-x-8 font-medium">
+          <a href="#home" class="hover:text-brand-600 dark:hover:text-brand-500 transition">Beranda</a>
+          <a href="#about" class="hover:text-brand-600 dark:hover:text-brand-500 transition">Tentang</a>
+          <a href="#skills" class="hover:text-brand-600 dark:hover:text-brand-500 transition">Keahlian</a>
+          <a href="#projects" class="hover:text-brand-600 dark:hover:text-brand-500 transition">Proyek</a>
+          <a href="#contact" class="hover:text-brand-600 dark:hover:text-brand-500 transition">Kontak</a>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <!-- Dark Mode Toggle Button -->
+          <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+            <i id="theme-icon" class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="relative w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden border-4 border-brand-500 shadow-xl bg-gray-200 dark:bg-gray-800">
+        <img 
+          src="foto.jpg" 
+          onerror="this.onerror=null; this.src='foto profil.jpeg'; if(!this.complete) this.src='foto profil.png';" 
+          alt="Foto Chalista Asther Thedresia" 
+          class="w-full h-full object-cover"
+        >
+      </div>
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-3 leading-tight">
+        Halo, Saya <br><span class="text-brand-600 dark:text-brand-500">CHALISTA ASTHER THEDRESIA</span> 👋
+      </h1>
+      
+      <!-- LENCANA SEKOLAH & KELAS -->
+      <div class="flex flex-wrap justify-center gap-2 mb-6">
+        <span class="px-3 py-1 bg-brand-100 dark:bg-brand-900/50 text-brand-700 dark:text-brand-300 font-semibold rounded-full text-sm border border-brand-200 dark:border-brand-800">
+          🏫 SMKN 8 JEMBER
+        </span>
+        <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 font-semibold rounded-full text-sm border border-purple-200 dark:border-purple-800">
+          💻 XI RPL 1
+        </span>
+      </div>
+
+      <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
+        Siswi Rekayasa Perangkat Lunak (RPL) yang berfokus membangun pengalaman digital yang indah, responsif, dan mudah digunakan.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#projects" class="px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition">Lihat Proyek</a>
+        <a href="#contact" class="px-6 py-3 bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 font-semibold rounded-lg transition">Hubungi Saya</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG SAYA -->
+  <section id="about" class="py-20 bg-white dark:bg-gray-800/50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Tentang Saya</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed text-center max-w-3xl mx-auto">
+        Saya Chalista Asther Thedresia, siswi kelas <span class="font-semibold text-brand-600 dark:text-brand-400">XI RPL 1</span> di <span class="font-semibold text-brand-600 dark:text-brand-400">SMKN 8 Jember</span>. Saya memiliki minat besar di bidang pengembangan web dan rekayasa perangkat lunak, selalu bersemangat mempelajari teknologi baru, serta berkomitmen menciptakan solusi digital yang kreatif dan inovatif.
+      </p>
+    </div>
+  </section>
+
+  <!-- KEAHLIAN (SKILLS) -->
+  <section id="skills" class="py-20 px-4">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Keahlian Utama</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition">
+          <i class="fab fa-html5 text-4xl text-orange-500 mb-3"></i>
+          <h3 class="font-semibold text-lg">HTML5 / CSS3</h3>
+        </div>
+
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition">
+          <i class="fab fa-js text-4xl text-yellow-500 mb-3"></i>
+          <h3 class="font-semibold text-lg">JavaScript</h3>
+        </div>
+
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition">
+          <i class="fab fa-react text-4xl text-blue-400 mb-3"></i>
+          <h3 class="font-semibold text-lg">React.js</h3>
+        </div>
+
+        <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition">
+          <i class="fab fa-node-js text-4xl text-green-500 mb-3"></i>
+          <h3 class="font-semibold text-lg">Node.js</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYEK -->
+  <section id="projects" class="py-20 bg-white dark:bg-gray-800/50 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Proyek Terbaru</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Project Card 1 -->
+        <div class="bg-gray-50 dark:bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-100 dark:border-gray-800 hover:-translate-y-1 transition duration-300">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Proyek 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Dashboard Analitik</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Aplikasi web analisis data penjualan menggunakan React dan Chart.js.</p>
+            <a href="#" class="text-brand-600 dark:text-brand-500 font-semibold text-sm hover:underline">Lihat Detail &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="bg-gray-50 dark:bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-100 dark:border-gray-800 hover:-translate-y-1 transition duration-300">
+          <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=600&q=80" alt="Proyek 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Platform E-Commerce</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Toko online lengkap dengan keranjang belanja dan integrasi metode pembayaran.</p>
+            <a href="#" class="text-brand-600 dark:text-brand-500 font-semibold text-sm hover:underline">Lihat Detail &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="bg-gray-50 dark:bg-gray-900 rounded-xl overflow-hidden shadow-md border border-gray-100 dark:border-gray-800 hover:-translate-y-1 transition duration-300">
+          <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Proyek 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Aplikasi Manajemen Tugas</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Aplikasi pemantau produktivitas berbasis Kanban board interaktif.</p>
+            <a href="#" class="text-brand-600 dark:text-brand-500 font-semibold text-sm hover:underline">Lihat Detail &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="contact" class="py-20 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4">Hubungi Saya</h2>
+      <p class="text-gray-600 dark:text-gray-400 mb-8">Punya proyek atau pertanyaan? Mari berdiskusi!</p>
+      
+      <form class="space-y-4 text-left max-w-xl mx-auto" onsubmit="event.preventDefault(); alert('Pesan Anda terkirim!');">
+        <div>
+          <label class="block text-sm font-medium mb-1">Nama</label>
+          <input type="text" required placeholder="Nama Anda" class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" required placeholder="email@contoh.com" class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-brand-500">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Pesan</label>
+          <textarea rows="4" required placeholder="Tuliskan pesan Anda..." class="w-full px-4 py-2 rounded-lg border dark:bg-gray-800 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-brand-500"></textarea>
+        </div>
+        <button type="submit" class="w-full py-3 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-lg transition">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 border-t border-gray-200 dark:border-gray-800 text-center text-sm text-gray-500">
+    <p>&copy; 2026 CHALISTA ASTHER THEDRESIA - XI RPL 1 SMKN 8 JEMBER. Seluruh hak cipta dilindungi.</p>
+  </footer>
+
+  <!-- JAVASCRIPT FOR DARK MODE -->
+  <script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+
+    // Cek preferensi awal
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.classList.add('dark');
+      themeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      if (document.documentElement.classList.contains('dark')) {
+        themeIcon.classList.replace('fa-moon', 'fa-sun');
+      } else {
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+      }
+    });
+  </script>
+</body>
+</html>
